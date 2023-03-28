@@ -1,0 +1,9 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  // Runs Prettier
+  "editor.codeActionsOnSave": ["source.formatDocument"],
+  "prettier.trailingComma": "none",
+  "prettier.singleQuote": true
+}
