@@ -98,6 +98,10 @@ const Initial = styled.div`
   `}
 `;
 
+/**
+- Use an avatar for attributing actions or content to specific users.
+- The user's name should always be present when using Avatar – either printed beside the avatar or in a tooltip.
+**/
 export function Avatar({ loading, username, src, size, ...props }) {
   let avatarFigure = <Icon icon="useralt" />;
   const a11yProps = {};
@@ -126,6 +130,9 @@ export function Avatar({ loading, username, src, size, ...props }) {
 Avatar.propTypes = {
   loading: PropTypes.bool,
   username: PropTypes.string,
+    /**
+    The URL of the Avatar's image.
+    */
   src: PropTypes.string,
   size: PropTypes.oneOf(Object.keys(sizes))
 };
